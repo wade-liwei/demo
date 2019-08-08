@@ -78,7 +78,7 @@ paths:
             type: integer
         400:
           description: get active wallet failed
-  /distribution:
+  /outputList:
     get:
       description: get the income source distribution of certain wallet
       parameters:
