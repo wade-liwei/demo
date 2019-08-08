@@ -1,11 +1,17 @@
 package dao
 
+type TableA struct {
+}
+
+func (t *TableA) GetDataFromTable() {
+
+}
+
 // func (dao *Dao) GetData() {
 //
 // 	rows, err := dao.Mysql
 //
 // }
-
 // func (_ *Dao) GetTable() {
 //
 // 	var (

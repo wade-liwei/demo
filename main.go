@@ -1,12 +1,9 @@
 package main
 
-import "database/sql"
-import _ "github.com/go-sql-driver/mysql"
+import (
+	"github.com/wade-liwei/demo/cmd"
+)
 
 func main() {
-
-	db, err := sql.Open("mysql", "user:password@/dbname")
-
-	_, _ = db, err
-
+	cmd.Execute()
 }
