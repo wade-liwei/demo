@@ -40,6 +40,17 @@ paths:
         400:
           description: get supply failed
           
+  /MaxSupply:
+    get:
+      description: get the maximum supply of btc
+      responses:
+        200:
+          description: get supply success
+          schema:
+            type: integer
+        400:
+          description: get supply failed
+          
   /blockSize:
     get:
       description: get the average block size of btc
@@ -50,34 +61,7 @@ paths:
             type: integer
         400:
           description: get size failed
-          
-  /transcation:
-    get:
-      description: get the transcation in 24hr of btc
-      responses:
-        200:
-          description: get transcation success
-          schema:
-            type: integer
-        400:
-          description: get transcation failed
-          
-  /activeWallet:
-    get:
-      description: get the number of active wallet in a certain date, pass in the date parameter as a string in the format of dd-mm-yyyy
-      parameters:
-        - name: date
-          in: query
-          description: the date of the active wallet number
-          type: string
-            
-      responses:
-        200:
-          description: get active wallet success
-          schema:
-            type: integer
-        400:
-          description: get active wallet failed
+
   /outputList:
     get:
       description: get the income source distribution of certain wallet
